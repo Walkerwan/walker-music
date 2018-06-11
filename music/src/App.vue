@@ -1,19 +1,23 @@
 <template>
   <div id="app">
-    <!-- <router-view/> -->
-    Hello World
+    <m-header></m-header>
+    <tab></tab>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
+import MHeader from 'components/m-header/m-header'
+import Tab from 'components/tab/tab'
+
 export default {
-  name: 'App'
+  components: {
+    MHeader,
+    Tab
+  }
 }
 </script>
 
 <style  lang = 'less' scoped rel="stylesheet/less">
-/* @import "~common/less/variable";
-#app {
-  color: @color-theme
-} */
+
 </style>
